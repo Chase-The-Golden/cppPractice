@@ -24,7 +24,6 @@ void func_2() {
 void func_3() {
     cout << "\nQ3" << endl;
 
-    srand(time(0));
     int r = rand() % 25;
     const int ASCII = 65 + r;
     cout << "Character = " << (char)(ASCII) << endl;
@@ -34,7 +33,6 @@ void func_3() {
 void func_4() {
     cout << "\nQ4" << endl;
     
-    srand(time(0));
     int a = rand() % 250, b = rand() % 250;
     cout << "a = " << a << ", b = " << b << endl;
 
@@ -58,7 +56,6 @@ void func_5() {
 void func_6() {
     cout << "\nQ6" << endl;
 
-    srand(time(0));
     int principle = rand() % 25000;
     float rate = rand() % 15;
     int years = rand() % 10;
@@ -74,7 +71,6 @@ void func_6() {
 void func_7() {
     cout << "\nQ7" << endl;
 
-    srand(time(0));
     int n = rand();
     cout << "Number = " << n << endl;
     cout << n << " is " << (n % 2 == 0 ? "Even" : "Odd") << " Number." << endl;
@@ -84,7 +80,6 @@ void func_8() {
     cout << "\nQ8" << endl;
 
     // Assigning random numbers
-    srand(time(0));
     int a = rand() % 25;
     int b = rand() % 25;
     int c = rand() % 25;
@@ -103,7 +98,6 @@ void func_8() {
 void func_9() {
     cout << "\nQ9" << endl;
 
-    srand(time(0));
     int year = rand() % 2026;
 
     cout << "Number to Check = " << year << endl;
@@ -122,7 +116,6 @@ void func_9() {
 void func_10() {
     cout << "\nQ10" << endl;
 
-    srand(time(0));
     int n = rand();
     bool prime = true;
 
@@ -146,17 +139,13 @@ void func_10() {
 void func_11() {
     cout << "\nQ11" << endl;
 
-    srand(time(0));
-
     string n = to_string(rand());
     int mid = n.length() % 2 == 0 ? n.length() / 2 : n.length() / 2 + 1;
 
     bool palindrome = true;
 
     for (int i = 0; i < mid; i++) {
-        if (n[i] == n[n.length()- 1 - i])
-            continue;
-        else {
+        if (n[i] != n[n.length()- 1 - i]) {
             palindrome = false;
             break;
         }
@@ -231,7 +220,6 @@ int recur_14(int n) {
 void func_14() {
     cout << "\nQ14" << endl;
 
-    srand(time(0));
     int num = rand() % 12;
 
     cout << "N = " << num << endl;
@@ -241,7 +229,6 @@ void func_14() {
 void func_15() {
     cout << "\nQ15" << endl;
 
-    srand(time(0));
     int a = rand() % 20, b = rand() % 20;
 
     cout << "a = " << a << ", b = " << b << endl;
